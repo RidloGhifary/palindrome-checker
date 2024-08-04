@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap");
+
+:root {
+  --background: #0b0924;
+  --green: rgb(0, 81, 0);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* style.css */
+body {
+  display: grid;
+  place-content: center;
+  height: 100vh;
+  background-color: var(--background);
+  color: white;
+  font-family: "Nunito Sans", sans-serif;
+  padding: 10px;
+}
+
+.container {
+  max-width: 550px;
+}
+
+.title {
+  font-size: 3rem;
+  text-align: center;
+  font-weight: 900;
+}
+
+.wrapper {
+  margin: 16px 0;
+  padding: 20px 0;
+  background-color: white;
+  color: var(--background);
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 5px 5px 0 0 var(--green);
+}
+
+.wrapper .text {
+  font-size: 1rem;
+}
+
+.wrapper .input {
+  margin: 16px 0;
+}
+
+.wrapper .input #text-input {
+  border: none;
+  border-bottom: 1px solid var(--background);
+  padding: 5px;
+  width: 50%;
+  transition: all 0.3 ease-in-out;
+}
+
+.wrapper .input #text-input:focus {
+  border: none;
+  outline: none;
+  border: none;
+  border-bottom: 3px solid var(--background);
+}
+
+.wrapper .input #check-btn {
+  padding: 10px 16px;
+  border: none;
+  background-color: var(--background);
+  color: white;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.3 ease-in-out;
+}
+
+.wrapper .input #check-btn:hover {
+  background-color: #0b0924d7;
+}
+
+.wrapper #result {
+  font-size: 1.3rem;
+  font-weight: 500;
+  display: none;
+}
+
+.instructions {
+  margin: 16px 0;
+  padding: 20px 0;
+  background-color: var(--green);
+  color: white;
+  text-align: center;
+  border-radius: 10px;
+}
